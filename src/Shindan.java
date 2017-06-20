@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Shindan {
 
 	Scanner sc = new Scanner(System.in);
-	public static void main(){
+	public static void main(String[] args){
 		//メイン処理をかく
 		int situ1 = situmon1();
 
