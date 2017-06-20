@@ -1,6 +1,8 @@
+import java.util.Scanner;
 
 public class Shindan {
 
+	Scanner sc = new Scanner(System.in);
 	public static void main(){
 		//メイン処理をかく
 		int situ1 = situmon1();
