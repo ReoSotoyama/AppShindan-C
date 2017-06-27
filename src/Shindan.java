@@ -15,13 +15,19 @@ public class Shindan {
 
 
 	public static int situmon1(){
-
-		int answer = 0;
+		int answer;
+		String s[] = {"人にあげる","ゴミにポイ","フリマで売る","燃やす"};
 		//質問内容を表示
-
+		System.out.println("問１");
+		System.out.println("要らなくなったぬいぐるみ、どうする？");
 		//回答内容を表示
-
+		for(int i = 0; i < s.length; i++){
+			System.out.println((i+1) + ":" + s[i]);
+		}
 		//ユーザーが答えを入力
+		System.out.print("回答を入力 ：");
+		answer = sc.nextInt();
+		System.out.print("あなたの回答は「" + s[answer-1] + "」");
 
 		return answer;
 	}
