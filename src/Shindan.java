@@ -2,26 +2,15 @@ import java.util.Scanner;
 
 public class Shindan {
 
-	Scanner sc = new Scanner(System.in);
 	public static void main(String[] args){
-		//ãƒ¡ã‚¤ãƒ³å‡¦ç†ã‚’ã‹ã
+
 		int situ1 = situmon1();
 
-		//å›ç­”å†…å®¹ã§è¨ºæ–­çµæœã‚’è€ƒãˆã‚‹å‡¦ç†
-
-		//å›ç­”çµæœã‚’å‡ºåŠ›
 	}
-
-
 
 	public static int situmon1(){
 
 		int answer = 0;
-		//è³ªå•å†…å®¹ã‚’è¡¨ç¤º
-
-		//å›ç­”å†…å®¹ã‚’è¡¨ç¤º
-
-		//ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒç­”ãˆã‚’å…¥åŠ›
 
 		return answer;
 	}
@@ -31,9 +20,27 @@ public class Shindan {
 
 	}
 
-	public static void situmon3(){
+	public static int situmon3(){
+	  Scanner sc = new Scanner(System.in);
+	  String[] s = {"Ô","Â","—Î"};
 
+	  System.out.print("‚ ‚È‚½‚ÌD‚«‚ÈF‚Í‚Ç‚ê‚Å‚·‚©H");
+	  for(int i = 0 ; i < s.length ; i++){
+	    System.out.println( (i + 1) + ":" + s[i]);
+	  }
 
+	  int result;
+	  System.out.print("”š‚ğ‘I‚ñ‚Å‚­‰º‚³‚¢ -> ");
+	  do{
+	    result = sc.nextInt();
+	    result--;
+	    if(0 <= result && result <= 2){
+	      System.out.print("³‚µ‚­“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ -> ");
+	    }
+	  }while(0 <= result && result <= 2);
+
+	  sc.close();
+	  return result;
 	}
 
 	public static void situmon4(){
